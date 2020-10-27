@@ -18,8 +18,8 @@ I am attempting to use data science to answer the question of what actually defi
 
 1. ) Researched different sources and found three data sets:
       - [Bay Wheels by Lyft](https://www.lyft.com/bikes/bay-wheels/system-data) - ridership data
-      - [General Bikeshare Feed Specification](https://gbfs.baywheels.com/gbfs/gbfs.json) - station data
-      - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit data
+      - [General Bikeshare Feed Specification](https://gbfs.baywheels.com/gbfs/gbfs.json) - additional station data
+      - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit connections
       
 2. ) Joined the collected data about station information with Bay Wheels' own data regarding ridership.
 SQL
