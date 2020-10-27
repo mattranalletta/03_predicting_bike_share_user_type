@@ -6,7 +6,7 @@
 
 ## Goal
 
-The goal of this project is to use machine learning classification methods to determine, based on a list of features, what type of Bay Area Baywheels bike share rider someone is — a subscribing member or casual user.
+The goal of this project is to use machine learning classification methods to determine, based on a list of features, what type of Bay Area Bay Wheels bike share rider someone is — a subscribing member or casual user.
 
 This could be useful for Lyft (the bike share system operator in the Bay) to better understand how to better target riders and how to best grow operations.
 
@@ -16,7 +16,11 @@ I am attempting to use data science to answer the question of what actually defi
 
 ## Methodologies
 
-1. ) Researched different sources and found three data sets: 
+1. ) Researched different sources and found three data sets:
+      - [Bay Wheels by Lyft](https://www.lyft.com/bikes/bay-wheels/system-data) - ridership data
+      - [General Bikeshare Feed Specification](https://gbfs.baywheels.com/gbfs/gbfs.json) - station data
+      - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit data
+      
 2. ) Joined the collected data about station information with Bay Wheels' own data regarding ridership.
 SQL
 3. ) One-hot encoded categorical information into dummy variables.
@@ -41,8 +45,8 @@ I essentially used Data Science to find aggregate decisions across thousands of 
 Sequentially:
 
 - [Data Collection](https://github.com/mattranalletta/03_predicting_bike_share_user_type/tree/main/data)
-- [EDA](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/eda_feature_engineering.ipynb)
-- [Classification Modeling](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/classification_modeling.ipynb)
+- [EDA]()
+- [Classification Modeling]()
 - [Visualization]()
 - [Presentation Slides]()
 
