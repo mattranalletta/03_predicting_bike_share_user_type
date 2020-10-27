@@ -58,7 +58,7 @@ Sequentially:
 - Pandas
 - Matplotlib
 - Seaborn
-- SQL
+- PostGreSQL
 
 ## Approaches and Skills
 
@@ -74,7 +74,7 @@ Sequentially:
 
 **Other**
 
-- Classification Scoring Metrics
+- EDA
+- Classification Scoring Metrics (Accuracy, Precision, Recall, f1)
 - ROC-AUC Curves
 - Precision-Recall Trade-off
-- EDA
