@@ -2,32 +2,29 @@
 
 # Predicting Bike Share User Type
 
-### Matt Ranalletta
+### [Matt Ranalletta](https://www.linkedin.com/in/matthewranalletta/)
 
 ## Goal
 
-The goal of this project is to use machine learning classification methods to determine, based on a list of features, what type of Bay Area bike share rider someone is — subscriber or casual user.
+The goal of this project is to use machine learning classification methods to determine, based on a list of features, what type of Bay Area Baywheels bike share rider someone is — a subscribing member or casual user.
 
 This could be useful for Lyft (the bike share system operator in the Bay) to better understand how to better target riders and how to best grow operations.
 
 ## Context
 
-By trying to accurately predict a type of yoga based solely on what positions are practiced, I am attempting to use data science to answer the question of what actually defines the various classifications of yoga, so that both students and teachers alike can have more concrete definitions and better communication.
-
-The end goal of this project is to create a web-based yoga sequencing application for yoga teachers, where they can create their own yoga classes from drop down menus of all 3600+ yoga poses and variations, sorted by their various features, and have their sequence analyzed to find out what genre it most closely falls into.
+I am attempting to use data science to answer the question of what actually defines the two classifications of bike share riders, so that the data can be used to improve system efficiency, station placement, and marketing efforts.
 
 ## Methodologies
 
-1. ) Researched different sources and found 
-2. ) Paired the collected data to include diagnostic info about every pose in every class.
-3. ) One-hot encoded categorical information into dummy variables to get binary stats about whether each pose fell into each category.
-
-
-6. ) Accomodated for class imbalance using RandomOverSampler.
-7. ) Tested 6 different classification models.
-8. ) Optimized, evaluated, and selected the best model -- Logistic Regression.
-9. ) Discovered feature importance.
-10. ) Built a [flask app](https://yoga-class-ification.herokuapp.com/) for yoga teachers to build their own yoga classes, and have them classified by percentage likelihood of falling into each genre!
+1. ) Researched different sources and found three data sets: 
+2. ) Joined the collected data about station information with Bay Wheels' own data regarding ridership.
+SQL
+3. ) One-hot encoded categorical information into dummy variables.
+4. ) Accomodated for class imbalance using _____.
+5. ) Tested seven different classification models.
+6. ) Optimized, evaluated, and selected the best model -- ______.
+7. ) Discovered feature importance.
+8. ) Built a visualization
 
 ## Findings and Conclusions
 
@@ -35,9 +32,7 @@ In scraping and analyzing yoga class data, I found that the vast majority (over 
 
 This can be problematic for both yoga teachers and yoga practitioners. For practitioners, if the vast majority of classes have the same 2 labels, but of course vary wildly in content, you could go in expecting one thing, but recieve a class of an entirely different intensity level you did not desire, since they've been obscured to be extremely broad and non-descript terms. As a teacher, it is important to be candid about what you are actually offering.
 
-After training and optimizing 6 different classification models, I found that a Logistic Regression performed the best. It had good ROC-AUC and high recall for all classes except Hatha.
-
-And this is actually a good thing! Many classes that probably really should fall into other categories get naively mis-labeled by their teachers as "Hatha", and now I can help classify them correctly.
+After training and optimizing seven different classification models, I found that a _____ performed the best. It had good ROC-AUC and high recall for all classes.
 
 I essentially used Data Science to find aggregate decisions across thousands of individual teachers' yoga classes about what poses are included in each type of class, to better define those ambiguous definitions. As it turns out, the most influential factors on class type are how much of the class is spent in Strengthening, Standing, Inversion, and Balance poses.
 
@@ -45,27 +40,21 @@ I essentially used Data Science to find aggregate decisions across thousands of 
 
 Sequentially:
 
-- [Data Collection](https://github.com/anterra/yoga-class-ifying/tree/master/data_collection)
-- [EDA and Feature Engineering](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/eda_feature_engineering.ipynb)
-- [Pipeline Modules](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/pipeline_modules.py)
+- [Data Collection](https://github.com/mattranalletta/03_predicting_bike_share_user_type/tree/main/data)
+- [EDA](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/eda_feature_engineering.ipynb)
 - [Classification Modeling](https://github.com/anterra/yoga-class-ifying/blob/master/classification_modeling/classification_modeling.ipynb)
-- [Flask App](https://github.com/anterra/yoga-class-ifying/tree/master/flask_app)
-- [Presentation Slides](https://github.com/anterra/yoga-class-ifying/blob/master/presentation/Yoga%20Classification.pdf)
-
-## Project Team
-
-- [Anterra Kennedy](https://www.linkedin.com/in/anterrakennedy/)
+- [Visualization]()
+- [Presentation Slides]()
 
 ## Technologies Used
 
 - Jupyter Notebook
 - Python
 - Scikit-learn
-- Flask
-- HTML/CSS
 - Pandas
 - Matplotlib
 - Seaborn
+- SQL
 
 ## Approaches and Skills
 
@@ -76,6 +65,7 @@ Sequentially:
 - Decision Tree
 - Random Forest
 - Bernoulli Naive Bayes
+- Gaussian Naive Bayes
 - XGBoost
 
 **Other**
@@ -84,4 +74,3 @@ Sequentially:
 - ROC-AUC Curves
 - Precision-Recall Trade-off
 - EDA
-- Webscraping
