@@ -26,19 +26,17 @@ SQL
 3. One-hot encoded categorical information into dummy variables.
 4. Accomodated for class imbalance using Random Over Sampler.
 5. Tested seven different classification models.
-6. Optimized, evaluated, and selected the best model -- ______ .
+6. Optimized, evaluated, and selected the best model - XGBClassifier.
 7. Discovered feature importance.
-8. Built a visualization
+8. Built a visualization in Streamlit.
 
 ## Findings and Conclusions
 
-In scraping and analyzing yoga class data, I found that the vast majority (over 60%) of yoga classes had been labelled by their teachers as "Vinyasa" or "Hatha". Far fewer classes get labeled with the other class types, even if technically the class being offered actually is more closely aligned with one of those types.
+(more info here)
 
-This can be problematic for both yoga teachers and yoga practitioners. For practitioners, if the vast majority of classes have the same 2 labels, but of course vary wildly in content, you could go in expecting one thing, but recieve a class of an entirely different intensity level you did not desire, since they've been obscured to be extremely broad and non-descript terms. As a teacher, it is important to be candid about what you are actually offering.
+After training and optimizing seven different classification models, I found that an XGBClassifier performed the best. It had the best ROC-AUC and a high recall for the casual user class.
 
-After training and optimizing seven different classification models, I found that a _____ performed the best. It had good ROC-AUC and high recall for all classes.
-
-I essentially used Data Science to find aggregate decisions across thousands of individual teachers' yoga classes about what poses are included in each type of class, to better define those ambiguous definitions. As it turns out, the most influential factors on class type are how much of the class is spent in Strengthening, Standing, Inversion, and Balance poses.
+I used data science to find aggregate decisions across thousands of bike share rides in the Bay Area. As it turns out, the most influential factors on determining user type are the duration of the ride and the distance ridden.
 
 ## Deliverables
 
