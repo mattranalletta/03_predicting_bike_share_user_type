@@ -21,8 +21,7 @@ I am attempting to use data science to answer the question of what actually defi
       - [General Bikeshare Feed Specification](https://gbfs.baywheels.com/gbfs/gbfs.json) - additional station data
       - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit connections
       
-2. Joined the collected data about station information with Bay Wheels' own data regarding ridership.
-SQL
+2. Joined the collected data about station information with Bay Wheels' own data regarding ridership (SQL and Pandas).
 3. One-hot encoded categorical information into dummy variables.
 4. Accomodated for class imbalance using Random Over Sampler.
 5. Tested seven different classification models.
