@@ -17,7 +17,7 @@ Turning casual users into regular riders seems to to be a big goal of Lyft itsel
 1. Researched different sources and found three relevant data sets:
       - [Bay Wheels by Lyft](https://www.lyft.com/bikes/bay-wheels/system-data) - ridership data
       - [General Bikeshare Feed Specification](https://gbfs.baywheels.com/gbfs/gbfs.json) - additional station data, like bike capacity at each dock
-      - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit connections to each bike dock
+      - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit connections to each bike station
 2. Joined the collected data about station information with Bay Wheels' own data regarding ridership (PostGreSQL and Pandas).
 3. One-hot encoded categorical information into dummy variables.
 4. Accomodated for class imbalance using Random Over Sampler.
