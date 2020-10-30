@@ -4,13 +4,13 @@
 
 ### [Matt Ranalletta](https://www.linkedin.com/in/matthewranalletta/)
 
-## Goal
+## Summary
 
 The goal of this project is to use machine learning classification methods to determine, based on a list of features, what type of Bay Area Bay Wheels bike share rider someone is — a subscribing member or casual customer, referred to in the raw data set as "Subscriber" or "Customer."
 
-This could be useful for Lyft (the Bay Wheels operator) to better understand how to better target riders and how to best grow operations.
+This could be useful for Lyft (the Bay Wheels operator) to better understand how to better target riders and how to best grow operations. Turning casual users into regular riders seems to to be a big goal of Lyft itself, as many calls to action on the [Bay Wheels website](https://www.lyft.com/bikes/bay-wheels) are prompting people to become members (see slide 3 of my presentation [here](https://docs.google.com/presentation/d/1SD74RgLegORcC0ilPPGmCsjnTEjG0r2kU4tdTO4vxLc/edit#slide=id.g6320de4b7d_0_424)).
 
-Turning casual users into regular riders seems to to be a big goal of Lyft itself, as many calls to action on the [Bay Wheels website](https://www.lyft.com/bikes/bay-wheels) are prompting people to become members (see slide 3 of my presentation [here](https://docs.google.com/presentation/d/1SD74RgLegORcC0ilPPGmCsjnTEjG0r2kU4tdTO4vxLc/edit#slide=id.g6320de4b7d_0_424)).
+I used ridership data from January 2020, so before the COVID-19 pandemic. Travel patterns and bike share stations have likely changed in the time since.
 
 ## Methodologies
 
@@ -28,7 +28,7 @@ Turning casual users into regular riders seems to to be a big goal of Lyft itsel
 
 ## Findings and Conclusions
 
-After training and optimizing seven different classification models, I found that an XGBClassifier performed the best. It had the best AUC-ROC score of all the models and a high recall (0.77) for the Casual Customer class, meaning that the model is correctly identifying 77% of Bay Wheels' non-subscribing riders. The XGB model
+After training and optimizing seven different classification models, I found that an XGBClassifier performed the best. It had the best AUC-ROC score of all the models and a high recall (0.77) for the Casual Customer class, meaning that the model is correctly identifying 77% of Bay Wheels' non-subscribing riders. The XGB model is using both trip duration and distance traveled on bike as the two most important features.
 
 ## Deliverables
 
