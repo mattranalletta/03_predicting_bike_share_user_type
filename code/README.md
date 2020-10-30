@@ -1,3 +1,4 @@
-1. EDA
-2. Classification modeling
-3. Streamlit app
+1. SQL requirement
+2. EDA
+3. Classification modeling
+4. Streamlit app
