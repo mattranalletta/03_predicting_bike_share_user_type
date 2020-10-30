@@ -6,46 +6,39 @@
 
 ## Goal
 
-The goal of this project is to use machine learning classification methods to determine, based on a list of features, what type of Bay Area Bay Wheels bike share rider someone is — a subscribing member or casual user.
+The goal of this project is to use machine learning classification methods to determine, based on a list of features, what type of Bay Area Bay Wheels bike share rider someone is — a subscribing member or casual customer, referred to in the raw data set as "Subscriber" or "Customer."
 
-This could be useful for Lyft (the bike share system operator in the Bay) to better understand how to better target riders and how to best grow operations.
+This could be useful for Lyft (the Bay Wheels operator) to better understand how to better target riders and how to best grow operations.
 
-## Context
-
-I am attempting to use data science to answer the question of what actually defines the two classifications of bike share riders, so that the data can be used to improve system efficiency, station placement, and marketing efforts.
+Turning casual users into regular riders seems to to be a big goal of Lyft itself, as many calls to action on the [Bay Wheels website](https://www.lyft.com/bikes/bay-wheels) are prompting people to become members (see slide 3 of my presentation [here](https://docs.google.com/presentation/d/1SD74RgLegORcC0ilPPGmCsjnTEjG0r2kU4tdTO4vxLc/edit#slide=id.g6320de4b7d_0_424).
 
 ## Methodologies
 
-1. Researched different sources and found three data sets:
+1. Researched different sources and found three relevant data sets:
       - [Bay Wheels by Lyft](https://www.lyft.com/bikes/bay-wheels/system-data) - ridership data
-      - [General Bikeshare Feed Specification](https://gbfs.baywheels.com/gbfs/gbfs.json) - additional station data
-      - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit connections
-      
-2. Joined the collected data about station information with Bay Wheels' own data regarding ridership (SQL and Pandas).
+      - [General Bikeshare Feed Specification](https://gbfs.baywheels.com/gbfs/gbfs.json) - additional station data, like bike capacity at each dock
+      - [Bureau of Transportation](https://data-usdot.opendata.arcgis.com/datasets/bikeshare) - transit connections to each bike dock
+2. Joined the collected data about station information with Bay Wheels' own data regarding ridership (PostGreSQL and Pandas).
 3. One-hot encoded categorical information into dummy variables.
 4. Accomodated for class imbalance using Random Over Sampler.
-5. Tested seven different classification models.
+5. Tested out seven different classification models.
 6. Optimized, evaluated, and selected the best model - XGBClassifier.
 7. Discovered feature importance.
-8. Built a visualization in Streamlit.
+8. Built a basic application in Streamlit.
 
 ## Findings and Conclusions
 
-(more info here)
-
-After training and optimizing seven different classification models, I found that an XGBClassifier performed the best. It had the best ROC-AUC and a high recall for the casual user class.
-
-I used data science to find aggregate decisions across thousands of bike share rides in the Bay Area. As it turns out, the most influential factors on determining user type are the duration of the ride and the distance ridden.
+After training and optimizing seven different classification models, I found that an XGBClassifier performed the best. It had the best AUC-ROC score of all the models and a high recall (0.77) for the Casual Customer class, meaning that the model is correctly identifying 77% of Bay Wheels' non-subscribing riders. The XGB model
 
 ## Deliverables
 
 Sequentially:
 
 - [Data Collection](https://github.com/mattranalletta/03_predicting_bike_share_user_type/tree/main/data)
-- [EDA]()
+- [EDA](https://github.com/mattranalletta/03_predicting_bike_share_user_type/blob/main/code/baywheels_EDA.ipynb)
 - [Classification Modeling]()
-- [Visualization]()
-- [Presentation Slides]()
+- [Web App code](https://github.com/mattranalletta/03_predicting_bike_share_user_type/blob/main/code/baywheels_app.py)
+- [Presentation Slides](https://docs.google.com/presentation/d/1SD74RgLegORcC0ilPPGmCsjnTEjG0r2kU4tdTO4vxLc/edit?usp=sharing)
 
 ## Technologies Used
 
@@ -72,6 +65,6 @@ Sequentially:
 **Other**
 
 - EDA
-- Classification Scoring Metrics (Accuracy, Precision, Recall, f1)
+- Classification Scoring Metrics (Accuracy, Precision, Recall, f1, AUC-ROC score)
 - ROC-AUC Curves
 - Precision-Recall Trade-off
