@@ -10,7 +10,7 @@ The goal of this project is to use machine learning classification methods to de
 
 This could be useful for Lyft (the Bay Wheels operator) to better understand how to better target riders and how to best grow operations.
 
-Turning casual users into regular riders seems to to be a big goal of Lyft itself, as many calls to action on the [Bay Wheels website](https://www.lyft.com/bikes/bay-wheels) are prompting people to become members (see slide 3 of my presentation [here](https://docs.google.com/presentation/d/1SD74RgLegORcC0ilPPGmCsjnTEjG0r2kU4tdTO4vxLc/edit#slide=id.g6320de4b7d_0_424).
+Turning casual users into regular riders seems to to be a big goal of Lyft itself, as many calls to action on the [Bay Wheels website](https://www.lyft.com/bikes/bay-wheels) are prompting people to become members (see slide 3 of my presentation [here](https://docs.google.com/presentation/d/1SD74RgLegORcC0ilPPGmCsjnTEjG0r2kU4tdTO4vxLc/edit#slide=id.g6320de4b7d_0_424)).
 
 ## Methodologies
 
