@@ -1,7 +1,7 @@
 ## Metis Project 3: Classification and Web Apps
 ### Predicting Bike Share User Type
 
-[Matt Ranalletta](https://www.linkedin.com/in/matthewranalletta/)
+by [Matt Ranalletta](https://www.linkedin.com/in/matthewranalletta/)
 
 ## Summary
 
