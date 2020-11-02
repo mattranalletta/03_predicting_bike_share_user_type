@@ -1,6 +1,5 @@
-### Metis Project 3: Classification and Web Apps
-
-# Predicting Bike Share User Type
+## Metis Project 3: Classification and Web Apps
+### Predicting Bike Share User Type
 
 ### [Matt Ranalletta](https://www.linkedin.com/in/matthewranalletta/)
 
@@ -62,7 +61,7 @@ Sequentially:
 - Gaussian Naive Bayes
 - XGBoost
 
-**Other**
+**Other:**
 
 - EDA
 - Classification Scoring Metrics (Accuracy, Precision, Recall, f1, AUC-ROC score)
